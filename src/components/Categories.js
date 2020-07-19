@@ -4,7 +4,7 @@ import { Button } from '@material-ui/core';
 
 function Categories(props) {
     let categoriesHTML = [];
-
+    
     for (let i = 0; i < props.categories.length; i++)
         categoriesHTML.push(
             <Button
@@ -16,18 +16,22 @@ function Categories(props) {
                         type: 'CHANGE_CATEGORY',
                         payload: props.categories[i].name,
                     });
+                    
                 }}
             >
                 {props.categories[i].displayName || props.categories[i].name}
             </Button>,
         );
-
-    return <>{categoriesHTML}</>;
-}
+    return (
+        <>
+        {categoriesHTML}
+        </>
+    )
+    }
 
 const mapStateToProps = (state) => {
     return {
-        categories: state.categories,
+        categories: state.categories.allCategories,
     };
 };
 
