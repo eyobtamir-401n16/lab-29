@@ -34,14 +34,14 @@ function Products(props) {
                      </CardActionArea>
                      <CardActions>
                          <Button size="small" color="primary" onClick={(e)=> {
-                             props.dipatch({
+                             props.dispatch({
                                  type:'ADD_TO_CART',
                                  payload:props.products[i]
                              });
                          }}>Add To Cart</Button>
 
                          <Button size="small" color="primary" onClick={(e)=> {
-                             props.dipatch({
+                             props.dispatch({
                                  type:'VIEW_DETAIL',
                                  payload:props.products[i]
                              });

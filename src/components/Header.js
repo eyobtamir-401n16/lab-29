@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { connect } from 'react-redux';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -21,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ButtonAppBar() {
+function ButtonAppBar(props) {
   const classes = useStyles();
 
   return (
@@ -35,11 +36,19 @@ export default function ButtonAppBar() {
             Maedot & Noah Store
           </Typography>
          <ShoppingCartIcon><i className="material-icons">shopping_cart</i></ShoppingCartIcon>
-          
+           <h4>{props.count}</h4>
         </Toolbar>
       </AppBar>
     </div>
   );
 }
 
+
+const mapStateToProps = (state) => {
+  return {
+     count: state.count,
+  };
+};
+
+export default connect(mapStateToProps)(ButtonAppBar);
 

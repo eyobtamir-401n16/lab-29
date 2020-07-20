@@ -8,7 +8,7 @@ allProducts: [
         stock: 5,
         price: 125,
         category: 'sport',
-        img: "../../public/image/sport/cleats.jpg",
+        img: "./image/sport/cleats.jpg",
     },
     {
         name: 'Jersey',
@@ -16,7 +16,7 @@ allProducts: [
         stock: 25,
         price: 68,
         category: 'sport',
-        img: "../../public/image/sport/jersey.jpg",
+        img: "./image/sport/jersey.jpg",
     },
     {
         name: 'Gaterade',
@@ -24,7 +24,7 @@ allProducts: [
         stock: 25,
         price: 1.25,
         category: 'drinks',
-        img: "../../public/image/drinks/gaterade.jpg",
+        img: "./image/drinks/gaterade.jpg",
     },
     {
         name: 'coke',
@@ -32,7 +32,7 @@ allProducts: [
         stock: 1,
         price:2.50,
         category: 'drinks',
-        img: "../../public/image/drinks/coke.jpg",
+        img: "./image/drinks/coke.jpg",
     },
 ],
 
