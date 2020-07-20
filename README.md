@@ -1,7 +1,7 @@
 # lab - 31
 
 
-##### [PR Link]()
+##### [PR Link](https://github.com/eyobtamir-401n16/lab-29/blob/reduxx/README.md)
 
 ## About the lab
 
