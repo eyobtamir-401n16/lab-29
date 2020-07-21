@@ -36,7 +36,7 @@ function ButtonAppBar(props) {
             Maedot & Noah Store
           </Typography>
          <ShoppingCartIcon><i className="material-icons">shopping_cart</i></ShoppingCartIcon>
-           <h4>{props.count}</h4>
+           <h4> ({props.count})</h4>
         </Toolbar>
       </AppBar>
     </div>
@@ -46,7 +46,7 @@ function ButtonAppBar(props) {
 
 const mapStateToProps = (state) => {
   return {
-     count: state.count,
+     count: state.cart.cartCount,
   };
 };
 

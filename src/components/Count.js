@@ -16,7 +16,7 @@ return(
 }
 const mapStateToProps = (state) => {
   return {
-      count: state.count,
+      count: state.cart.cartCounts,
   };
 };
 
