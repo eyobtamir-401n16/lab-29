@@ -1,4 +1,6 @@
+
 const initState = {
+
   allCategories: [
     { name: 'sport', displayName: 'Sports' },
     { name: 'drinks', displayName: '' },

@@ -2,9 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Button } from '@material-ui/core';
 
+
 function Categories(props) {
     let categoriesHTML = [];
-    
+
     for (let i = 0; i < props.categories.length; i++)
         categoriesHTML.push(
             <Button
